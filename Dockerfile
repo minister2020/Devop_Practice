@@ -1,4 +1,5 @@
-FROM openjdk:17-jdk-slim-bullseye
+# Use a valid OpenJDK 17 slim image
+FROM eclipse-temurin:17-jdk-focal
 WORKDIR /app
 COPY target/*.jar app.jar
 EXPOSE 8080
