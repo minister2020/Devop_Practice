@@ -64,8 +64,6 @@ jobs:
             -Dsonar.host.url=https://sonarcloud.io \
             -Dsonar.login=${{ secrets.SONAR_TOKEN }}
 
-
-
   docker-build-scan-push:
     name: Docker Image Build And Scan
     runs-on: ubuntu-latest
