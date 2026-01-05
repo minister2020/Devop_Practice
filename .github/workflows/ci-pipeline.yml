@@ -2,7 +2,7 @@ name: CI Pipeline
 
 on:
   push:
-    branches: [ Master, develop ]
+    branches: ["master"]
   pull_request:
   workflow_dispatch:
 
