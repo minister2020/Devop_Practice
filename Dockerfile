@@ -1,6 +1,7 @@
-# Use a valid OpenJDK 17 slim image
-FROM eclipse-temurin:17-jdk-focal
+FROM eclipse-temurin:21-jre-jammy
+
 WORKDIR /app
 COPY target/*.jar app.jar
+
 EXPOSE 8080
 ENTRYPOINT ["java", "-jar", "app.jar"]
